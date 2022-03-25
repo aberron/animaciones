@@ -1,0 +1,83 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding-inline: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Banner */
+.banner {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  transition: background-color 500ms ease-in;
+}
+.banner:hover{
+color:coral;
+}
+h1 {
+  line-height: 1;
+  color: white;
+  font-size: 10rem;
+  font-weight: 700;
+  font-family: Pomidor;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  animation: title 1s ease-in-out;
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-family: Helvetica;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  animation: text 1s ease-in-out;
+}
